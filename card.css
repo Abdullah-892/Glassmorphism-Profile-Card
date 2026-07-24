@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Screen ke center mein lane ke liye */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(31, 95, 120, 1) 0%, rgba(87, 199, 133, 1) 100%);
+}
+
+.Profile {
+    width: 380px;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    color: #ffffff;
+}
+
+.icon {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.Profile h2 {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.Profile-title {
+    position: relative;
+    top: 0px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    transition: top 0.2s ease, text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.Profile-title:active {
+    top: -10px;
+    text-shadow: 0px 10px 12px rgba(250, 18, 18, 0.99);
+    color: yellow;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 15px;
+}
+
+.input-box label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+    top: -8px;
+    left: 10px;
+    font-size: 12px;
+    background: #1f5f78;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.sin-up button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login a {
+    color: yellow;
+    text-decoration: none;
+}
